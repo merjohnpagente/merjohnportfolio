@@ -1,499 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Merjohn Pagente | Web Developer</title>
-    <meta name="description" content="Merjohn Pagente — Web Developer & Designer from the Philippines. I build responsive, user-friendly web experiences.">
-    <link rel="icon" href="190692035.jpg" type="image/jpeg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merjohn Pagente — Web Developer & Designer</title>
+  <meta name="description" content="Merjohn Pagente — Web Developer & UI/UX Designer from the Philippines. I build responsive, user-friendly web experiences.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="reveal-ready">
+<body>
 
-    <div class="bg-fx" aria-hidden="true">
-        <svg class="bg-fx__svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <filter id="bgBlur" x="-60%" y="-60%" width="220%" height="220%">
-                    <feGaussianBlur stdDeviation="70"/>
-                </filter>
-                <radialGradient id="bgGradGold" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#f4913f" stop-opacity="0.5"/>
-                    <stop offset="100%" stop-color="#f4913f" stop-opacity="0"/>
-                </radialGradient>
-                <radialGradient id="bgGradOrange" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#d1621f" stop-opacity="0.45"/>
-                    <stop offset="100%" stop-color="#d1621f" stop-opacity="0"/>
-                </radialGradient>
-                <radialGradient id="bgGradCyan" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="#00d9ff" stop-opacity="0.3"/>
-                    <stop offset="100%" stop-color="#00d9ff" stop-opacity="0"/>
-                </radialGradient>
-            </defs>
-            <g class="bg-fx__blob bg-fx__blob--1" filter="url(#bgBlur)">
-                <path fill="url(#bgGradGold)">
-                    <animate attributeName="d" dur="24s" repeatCount="indefinite"
-                        values="M300,120 C420,60 560,90 610,200 C660,310 600,430 480,470 C360,510 220,470 170,360 C120,250 180,180 300,120 Z;
-                                M330,150 C470,70 590,150 605,260 C620,370 530,460 410,480 C290,500 190,430 175,320 C160,210 190,230 330,150 Z;
-                                M280,100 C400,40 540,110 590,220 C640,330 590,450 460,490 C330,530 210,460 160,350 C110,240 160,160 280,100 Z;
-                                M300,120 C420,60 560,90 610,130 C660,310 600,430 480,470 C360,510 220,470 170,360 C120,250 180,180 300,120 Z"/>
-                </path>
-            </g>
-            <g class="bg-fx__blob bg-fx__blob--2" filter="url(#bgBlur)">
-                <path fill="url(#bgGradOrange)">
-                    <animate attributeName="d" dur="30s" repeatCount="indefinite"
-                        values="M1150,420 C1280,360 1420,410 1460,530 C1500,650 1420,760 1290,790 C1160,820 1040,750 1010,630 C980,510 1020,480 1150,420 Z;
-                                M1180,450 C1320,400 1440,470 1450,580 C1460,690 1360,770 1240,790 C1120,810 1020,730 1010,620 C1000,510 1040,500 1180,450 Z;
-                                M1120,400 C1260,330 1400,400 1450,520 C1480,620 1440,760 1300,800 C1160,840 1030,760 1080,640 C970,520 980,470 1120,400 Z;
-                                M1150,420 C1380,360 1420,410 1460,530 C1500,650 1420,760 1290,790 C1160,790 1040,750 1010,630 C980,520 1020,480 1150,420 Z"/>
-                </path>
-            </g>
-            <g class="bg-fx__blob bg-fx__blob--3" filter="url(#bgBlur)">
-                <path fill="url(#bgGradCyan)">
-                    <animate attributeName="d" dur="36s" repeatCount="indefinite"
-                        values="M450,650 C580,600 700,660 730,770 C760,880 680,970 550,990 C420,1010 310,940 290,830 C270,720 320,700 450,650 Z;
-                                M480,680 C610,610 720,690 730,790 C740,860 640,920 520,980 C400,960 300,910 310,810 C280,710 380,690 480,680 Z;
-                                M420,620 C560,560 670,630 730,740 C770,850 700,960 560,1000 C540,980 400,960 300,840 C260,720 300,680 420,620 Z;
-                                M450,630 C580,600 700,660 730,770 C780,880 700,950 550,980 C460,980 350,940 320,830 C350,720 420,700 450,630 Z"/>
-                </path>
-            </g>
-            <g class="bg-fx__mesh bg-fx__mesh--1">
-                <line x1="200" y1="150" x2="500" y2="80"/><line x1="500" y1="80" x2="850" y2="180"/>
-                <line x1="850" y1="180" x2="1200" y2="120"/><line x1="1200" y1="120" x2="1450" y2="300"/>
-                <line x1="200" y1="150" x2="150" y2="500"/><line x1="500" y1="80" x2="600" y2="450"/>
-                <line x1="850" y1="180" x2="600" y2="450"/><line x1="850" y1="180" x2="950" y2="520"/>
-                <line x1="1200" y1="120" x2="950" y2="520"/><line x1="1200" y1="120" x2="1300" y2="600"/>
-                <line x1="1450" y1="300" x2="1300" y2="600"/><line x1="150" y1="500" x2="600" y2="450"/>
-                <line x1="600" y1="450" x2="950" y2="520"/><line x1="950" y1="520" x2="1300" y2="600"/>
-                <line x1="150" y1="500" x2="300" y2="800"/><line x1="600" y1="450" x2="300" y2="800"/>
-                <line x1="600" y1="450" x2="700" y2="850"/><line x1="950" y1="520" x2="700" y2="850"/>
-                <line x1="950" y1="520" x2="1100" y2="780"/><line x1="1300" y1="600" x2="1100" y2="780"/>
-                <line x1="1300" y1="600" x2="1400" y2="900"/><line x1="300" y1="800" x2="700" y2="850"/>
-                <line x1="700" y1="850" x2="1100" y2="780"/><line x1="1100" y1="780" x2="1400" y2="900"/>
-                <circle cx="200" cy="150" r="5"/><circle cx="500" cy="80" r="5"/><circle cx="850" cy="180" r="5"/>
-                <circle cx="1200" cy="120" r="5"/><circle cx="1450" cy="300" r="5"/><circle cx="150" cy="500" r="5"/>
-                <circle cx="600" cy="450" r="6"/><circle cx="950" cy="520" r="6"/><circle cx="1300" cy="600" r="5"/>
-                <circle cx="300" cy="800" r="5"/><circle cx="700" cy="850" r="5"/><circle cx="1100" cy="780" r="5"/>
-                <circle cx="1400" cy="900" r="5"/>
-            </g>
-            <g class="bg-fx__mesh bg-fx__mesh--2">
-                <polygon points="1250,650 1400,700 1430,850 1320,950 1170,900 1140,750"/>
-                <polygon points="1250,650 1320,730 1290,830 1190,830 1160,730"/>
-            </g>
-        </svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="wordmark">Merjohn<span>Pagente</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-
-    <div class="progress-bar" aria-hidden="true"><span id="progressFill"></span></div>
-
-    <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header">
-        <div class="header-inner">
-            <a href="#top" class="wordmark">MERJOHN<span>PAGENTE</span></a>
-            <nav class="site-nav" aria-label="Primary">
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#skills">Skills</a>
-                <a href="#connect">Contact</a>
-            </nav>
-            <div class="header-social" aria-label="Social links">
-                <a href="https://github.com/MerjohnPagente" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
-                <a href="https://www.facebook.com/mjay.pagente.5" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
-                <a href="mailto:merjohnpagente11@gmail.com" aria-label="Email">EM</a>
-            </div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
-                <span></span><span></span><span></span>
-            </button>
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="container" data-reveal>
+        <h1>Merjohn Pagente</h1>
+        <p class="hero-tagline lead">Web Developer & UI/UX Designer from the Philippines. I build responsive, user-friendly web experiences.</p>
+        <div class="hero-cta" style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:2rem;">
+          <a href="work.html" class="btn btn--fill">View Work</a>
+          <a href="about.html" class="btn btn--outline">Learn More</a>
         </div>
-        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#skills">Skills</a>
-            <a href="#connect">Contact</a>
-        </nav>
-    </header>
+      </div>
+    </section>
+  </main>
 
-    <main id="main">
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <a href="mailto:merjohnpagente11@gmail.com" class="footer-link">merjohnpagente11@gmail.com</a>
+      <a href="https://www.facebook.com/mjay.pagente.5" target="_blank" rel="noopener" class="footer-link">Facebook</a>
+      <p class="copyright">&copy; <span id="year"></span> Merjohn Pagente. All rights reserved.</p>
+    </div>
+  </footer>
 
-        <!-- HERO -->
-        <section class="hero" id="top">
-            <div class="hero-grid" aria-hidden="true"></div>
-            <div class="hero-frame" aria-hidden="true">
-                <i class="hf hf--tl"></i><i class="hf hf--tr"></i><i class="hf hf--bl"></i><i class="hf hf--br"></i>
-            </div>
-            <div class="hero-type" aria-hidden="true">
-                <div class="hero-line">I AM A</div>
-                <div class="hero-line hero-line--accent hero-line--dev">WEB</div>
-                <div class="hero-line hero-line--accent hero-line--long">DEVELOPER</div>
-            </div>
-            <h1 class="sr-only">Merjohn Pagente — Web Developer & Designer</h1>
-
-            <div class="hero-figure-wrap">
-                <img class="hero-figure" src="190692035.jpg" alt="Merjohn Pagente" fetchpriority="high">
-            </div>
-
-            <div class="hero-glow" aria-hidden="true"></div>
-            <p class="hero-sub" id="heroSub">Web Developer · UI/UX Designer · Front-End Specialist</p>
-            <div class="hero-brand">
-                <span class="hero-brand__name">Merjohn Pagente</span>
-                <span class="hero-brand__tag">I Build. I Design. I Deliver.</span>
-                <span class="hero-swatches" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-            </div>
-            <span class="hero-spark hero-spark--main" aria-hidden="true">✦</span>
-            <span class="hero-spark hero-spark--sm" aria-hidden="true">✦</span>
-            <span class="hero-plus hero-plus--1" aria-hidden="true">+</span>
-            <span class="hero-plus hero-plus--2" aria-hidden="true">+</span>
-            <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
-        </section>
-
-        <!-- STATEMENT / MARQUEE -->
-        <section class="statement" aria-label="Positioning statement">
-            <p class="statement__line" data-reveal>
-                A <em>web developer</em> and <em>designer</em> from the Philippines who builds
-                responsive, interactive, and user-friendly web experiences. From concept to deployment,
-                I turn ideas into polished, production-ready websites.
-            </p>
-            <div class="marquee" aria-hidden="true">
-                <div class="marquee__track">
-                    <span>HTML5</span><span>·</span><span>CSS3</span><span>·</span>
-                    <span>JavaScript</span><span>·</span><span>Responsive Design</span><span>·</span>
-                    <span>UI/UX</span><span>·</span><span>Git & GitHub</span><span>·</span>
-                    <span>Web APIs</span><span>·</span><span>Front-End</span><span>·</span>
-                    <span>HTML5</span><span>·</span><span>CSS3</span><span>·</span>
-                    <span>JavaScript</span><span>·</span><span>Responsive Design</span><span>·</span>
-                    <span>UI/UX</span><span>·</span><span>Git & GitHub</span><span>·</span>
-                    <span>Web APIs</span><span>·</span><span>Front-End</span><span>·</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="about" id="about">
-            <span class="section-num" aria-hidden="true">01</span>
-            <div class="about-media">
-                <img src="190692035.jpg" alt="Merjohn Pagente" loading="lazy" data-reveal-img>
-                <span class="about-media__spark" aria-hidden="true">✦</span>
-            </div>
-            <div class="about-copy">
-                <span class="eyebrow" data-reveal>The Story</span>
-                <h2 data-reveal>Building the web, one project at a time.</h2>
-                <p data-reveal>
-                    I'm <strong>Merjohn Pagente</strong>, a 21-year-old web developer with a passion for
-                    creating clean, modern, and functional websites and web applications. I specialize in
-                    front-end development, crafting responsive and interactive user interfaces using HTML,
-                    CSS, and JavaScript.
-                </p>
-                <p data-reveal>
-                    I love turning creative ideas into real, working products that people enjoy using.
-                    When I'm not coding, you'll find me exploring new technologies, learning about UI/UX
-                    design trends, or working on personal projects that challenge me to grow.
-                </p>
-                <p data-reveal>
-                    Every project I build is an opportunity to learn something new. I believe in shipping
-                    work that matters, pixel by pixel, function by function.
-                </p>
-            </div>
-        </section>
-
-        <!-- STATS -->
-        <section class="stats-section" id="stats">
-            <span class="section-num" aria-hidden="true">02</span>
-            <div class="platform-marquee" aria-hidden="true">
-                <div class="platform-marquee__track">
-                    <span>Projects</span><span>GitHub</span><span>Code</span><span>Design</span><span>Build</span>
-                    <span>Projects</span><span>GitHub</span><span>Code</span><span>Design</span><span>Build</span>
-                </div>
-            </div>
-            <div class="stat-grid">
-                <div class="stat-card" data-reveal>
-                    <span class="stat-platform">Focus</span>
-                    <span class="stat-number" data-count="100">0</span>
-                    <span class="stat-label">% Committed to Web Development</span>
-                </div>
-                <div class="stat-card" data-reveal>
-                    <span class="stat-platform">Skills</span>
-                    <span class="stat-number" data-count="6">0</span>
-                    <span class="stat-label">Core Technologies Mastered</span>
-                </div>
-                <div class="stat-card" data-reveal>
-                    <span class="stat-platform">Projects</span>
-                    <span class="stat-number" data-count="6">0</span>
-                    <span class="stat-label">Completed & Deployed Projects</span>
-                </div>
-                <div class="stat-card" data-reveal>
-                    <span class="stat-platform">Age</span>
-                    <span class="stat-number" data-count="21">0</span>
-                    <span class="stat-label">Years Old, Hungry to Learn More</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- WORK -->
-        <section class="work-section" id="work">
-            <span class="section-num" aria-hidden="true">03</span>
-            <span class="eyebrow" data-reveal>Featured Work</span>
-            <h2 data-reveal>Projects I've brought to life.</h2>
-            <p class="work-section-copy" data-reveal>
-                A small selection of what I've built. Each project taught me something new and pushed me forward.
-            </p>
-
-            <div class="filter-bar" data-reveal>
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Apps</button>
-                <button class="filter-btn" data-filter="website">Websites</button>
-                <button class="filter-btn" data-filter="design">Design</button>
-            </div>
-
-            <div class="work-grid">
-                <article class="work-card" data-category="web" data-tilt data-reveal>
-                    <div class="work-card__thumb">
-                        <img src="image.png" alt="" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="work-card__placeholder" style="display:none;">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f4913f" stroke-width="1.5"><rect x="6" y="4" width="12" height="14" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="12" y2="16"/></svg>
-                        </div>
-                    </div>
-                    <span class="work-card__tag">Web App</span>
-                    <h3>FitCore Gym Management</h3>
-                    <p>A full gym management system with membership tracking, class scheduling, and trainer management.</p>
-                    <div class="work-card__links">
-                        <a href="https://merjohnpagente.github.io/FITCORE-GYM-MANAGEMENT-SYSTEM/" target="_blank" rel="noopener" class="btn-work">Live Demo ↗</a>
-                        <a href="https://github.com/MerjohnPagente/FITCORE-GYM-MANAGEMENT-SYSTEM" target="_blank" rel="noopener" class="btn-work-outline">Source</a>
-                    </div>
-                </article>
-
-                <article class="work-card" data-category="web" data-tilt data-reveal>
-                    <div class="work-card__thumb">
-                        <img src="" alt="" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="work-card__placeholder">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e4913f" stroke-width="1.5"><rect x="6" y="4" width="12" height="14" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="12" y2="12"/><circle cx="16" cy="8" r="1"/></svg>
-                        </div>
-                    </div>
-                    <span class="work-card__tag">Web App</span>
-                    <h3>Task Manager</h3>
-                    <p>A full-featured task management app with add, edit, delete, and filter capabilities.</p>
-                    <div class="work-card__links">
-                        <a href="#" class="btn-work">Live Demo ↗</a>
-                        <a href="#" class="btn-work-outline">Source</a>
-                    </div>
-                </article>
-
-                <article class="work-card" data-category="website" data-tilt data-reveal>
-                    <div class="work-card__thumb">
-                        <img src="" alt="" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="work-card__placeholder">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e4913f" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/><path d="M12 2a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10"/></svg>
-                        </div>
-                    </div>
-                    <span class="work-card__tag">Website</span>
-                    <h3>E-Commerce Storefront</h3>
-                    <p>A responsive e-commerce website with product listing and cart functionality.</p>
-                    <div class="work-card__links">
-                        <a href="#" class="btn-work">Live Demo ↗</a>
-                        <a href="#" class="btn-work-outline">Source</a>
-                    </div>
-                </article>
-
-                <article class="work-card" data-category="web" data-tilt data-reveal>
-                    <div class="work-card__thumb">
-                        <img src="" alt="" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="work-card__placeholder">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e4913f" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/><line x1="8" y1="2" x2="16" y2="2"/></svg>
-                        </div>
-                    </div>
-                    <span class="work-card__tag">Web App</span>
-                    <h3>Weather Dashboard</h3>
-                    <p>Real-time weather app with current conditions and 5-day forecast using a weather API.</p>
-                    <div class="work-card__links">
-                        <a href="#" class="btn-work">Live Demo ↗</a>
-                        <a href="#" class="btn-work-outline">Source</a>
-                    </div>
-                </article>
-
-                <article class="work-card" data-category="design" data-tilt data-reveal>
-                    <div class="work-card__thumb">
-                        <img src="" alt="" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="work-card__placeholder">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e4913f" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="8" y1="6" x2="8" y2="6"/><line x1="16" y1="6" x2="16" y2="6"/></svg>
-                        </div>
-                    </div>
-                    <span class="work-card__tag">Design</span>
-                    <h3>UI Component Library</h3>
-                    <p>A collection of reusable UI components with consistent styling for web applications.</p>
-                    <div class="work-card__links">
-                        <a href="#" class="btn-work">Live Demo ↗</a>
-                        <a href="#" class="btn-work-outline">Source</a>
-                    </div>
-                </article>
-
-                <article class="work-card" data-category="website" data-tilt data-reveal>
-                    <div class="work-card__thumb">
-                        <img src="" alt="" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="work-card__placeholder">
-                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e4913f" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="4"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="12" y1="10" x2="12" y2="14"/></svg>
-                        </div>
-                    </div>
-                    <span class="work-card__tag">Website</span>
-                    <h3>Restaurant Landing Page</h3>
-                    <p>Modern restaurant website with menu display, reservation form, and location sections.</p>
-                    <div class="work-card__links">
-                        <a href="#" class="btn-work">Live Demo ↗</a>
-                        <a href="#" class="btn-work-outline">Source</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section class="skills-section" id="skills">
-            <span class="section-num" aria-hidden="true">04</span>
-            <span class="eyebrow" data-reveal>What I Work With</span>
-            <h2 data-reveal>Technologies under my belt.</h2>
-            <div class="skills-grid">
-                <article class="skill-card" data-tilt data-reveal>
-                    <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
-                    <span class="skill-num">01</span>
-                    <h3>HTML5</h3>
-                    <div class="skill-ring-small">
-                        <svg viewBox="0 0 120 120" width="90" height="90">
-                            <circle class="ring-bg" cx="60" cy="60" r="40"/>
-                            <circle class="ring-fill" cx="60" cy="60" r="40" data-percent="90"/>
-                            <text class="ring-center" x="60" y="60" text-anchor="middle" dominant-baseline="central">90%</text>
-                        </svg>
-                    </div>
-                    <p>Semantic markup, accessibility, clean structure.</p>
-                </article>
-                <article class="skill-card" data-tilt data-reveal>
-                    <span class="skill-icon" aria-hidden="true">#</span>
-                    <span class="skill-num">02</span>
-                    <h3>CSS3</h3>
-                    <div class="skill-ring-small">
-                        <svg viewBox="0 0 120 120" width="90" height="90">
-                            <circle class="ring-bg" cx="60" cy="60" r="52"/>
-                            <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="85"/>
-                            <text class="ring-center" x="60" y="60" text-anchor="middle" dominant-baseline="central">85%</text>
-                        </svg>
-                    </div>
-                    <p>Animations, layouts, modern responsive design.</p>
-                </article>
-                <article class="skill-card" data-tilt data-reveal>
-                    <span class="skill-icon" aria-hidden="true">{ }</span>
-                    <span class="skill-num">03</span>
-                    <h3>JavaScript</h3>
-                    <div class="skill-ring-small">
-                        <svg viewBox="0 0 120 120" width="90" height="90">
-                            <circle class="ring-bg" cx="60" cy="60" r="52"/>
-                            <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="75"/>
-                            <text class="ring-center" x="60" y="60" text-anchor="middle" dominant-baseline="central">75%</text>
-                        </svg>
-                    </div>
-                    <p>Dynamic functionality and DOM scripting.</p>
-                </article>
-                <article class="skill-card" data-tilt data-reveal>
-                    <span class="skill-icon" aria-hidden="true">◇</span>
-                    <span class="skill-num">04</span>
-                    <h3>Responsive</h3>
-                    <div class="skill-ring-small">
-                        <svg viewBox="0 0 120 120" width="90" height="90">
-                            <circle class="ring-bg" cx="60" cy="60" r="52"/>
-                            <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="88"/>
-                            <text class="ring-center" x="60" y="60" text-anchor="middle" dominant-baseline="central">88%</text>
-                        </svg>
-                    </div>
-                    <p>Mobile-first, adaptive layouts that scale.</p>
-                </article>
-                <article class="skill-card" data-tilt data-reveal>
-                    <span class="skill-icon" aria-hidden="true">⚙</span>
-                    <span class="skill-num">05</span>
-                    <h3>Git & GitHub</h3>
-                    <div class="skill-ring-small">
-                        <svg viewBox="0 0 120 120" width="90" height="90">
-                            <circle class="ring-bg" cx="60" cy="60" r="52"/>
-                            <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="70"/>
-                            <text class="ring-center" x="60" y="60" text-anchor="middle" dominant-baseline="central">70%</text>
-                        </svg>
-                    </div>
-                    <p>Version control, branching, and deployment.</p>
-                </article>
-                <article class="skill-card" data-tilt data-reveal>
-                    <span class="skill-icon" aria-hidden="true">✦</span>
-                    <span class="skill-num">06</span>
-                    <h3>Web APIs</h3>
-                    <div class="skill-ring-small">
-                        <svg viewBox="0 0 120 120" width="90" height="90">
-                            <circle class="ring-bg" cx="60" cy="60" r="52"/>
-                            <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="72"/>
-                            <text class="ring-center" x="60" y="60" text-anchor="middle" dominant-baseline="central">72%</text>
-                        </svg>
-                    </div>
-                    <p>REST integration, fetch, async workflows.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- CONNECT -->
-        <section class="connect" id="connect">
-            <span class="section-num" aria-hidden="true">05</span>
-            <div class="connect-watermark" aria-hidden="true">LET'S TALK</div>
-            <div class="connect-inner">
-                <span class="eyebrow" data-reveal>Reach Out</span>
-                <h2 data-reveal>Let's build something <em>together.</em></h2>
-                <p class="connect-copy" data-reveal>
-                    I'm always open to new opportunities. Whether it's a project, collaboration, or just
-                    a chat about tech—reach out on any platform below.
-                </p>
-
-                <div class="connect-grid" data-reveal>
-                    <a class="connect-card" href="mailto:merjohnpagente11@gmail.com" data-tilt>
-                        <span class="connect-card__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
-                        </span>
-                        <div class="connect-card__text">
-                            <span class="connect-card__name">Email</span>
-                            <span class="connect-card__meta">merjohnpagente11@gmail.com</span>
-                        </div>
-                    </a>
-                    <a href="https://github.com/MerjohnPagente" target="_blank" rel="noopener" class="connect-card" data-tilt>
-                        <span class="connect-card__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S17.73.825 14 3a9.48 9.48 0 0 0-6 0C1.27.825 1 3 1 3a5.07 5.07 0 0 0-.09 1.77A5.44 5.44 0 0 0 2 8.5c0 5.49 3.3 6.64 6.44 7A3.37 3.37 0 0 0 7.5 18v3"/></svg>
-                        </span>
-                        <div class="connect-card__text">
-                            <span class="connect-card__name">GitHub</span>
-                            <span class="connect-card__meta">MerjohnPagente</span>
-                        </div>
-                    </a>
-                    <a href="https://www.facebook.com/mjay.pagente.5" target="_blank" rel="noopener" class="connect-card" data-tilt>
-                        <span class="connect-card__icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                        </span>
-                        <div class="connect-card__text">
-                            <span class="connect-card__name">Facebook</span>
-                            <span class="connect-card__meta">Merchant Pagente</span>
-                        </div>
-                    </a>
-                </div>
-
-                <a class="connect-cta" href="mailto:merjohnpagente11@gmail.com" data-reveal data-tilt>
-                    <span class="connect-cta__label">Send Me an Email</span>
-                    <span class="connect-cta__url">merjohnpagente11@gmail.com</span>
-                    <span class="connect-cta__arrow" aria-hidden="true">↗</span>
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="site-footer">
-        <span>&copy; <span id="year"></span> MerJohn Pagente. All rights reserved.</span>
-        <span>Web Developer · UI/UX Designer · Front-End Specialist</span>
-    </footer>
-
-    <script src="https://unpkg.com/lenis@1/dist/lenis.min.js" defer></script>
-    <script src="script.js" defer></script>
+  <script src="https://unpkg.com/lenis@1/dist/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — Merjohn Pagente</title>
+  <meta name="description" content="FitCore Gym Management System — A full gym management system with membership tracking, class scheduling, and trainer management.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="wordmark">Merjohn<span>Pagente</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html" aria-current="page">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section" data-reveal>
+      <div class="container">
+        <span class="eyebrow">Featured Project</span>
+        <h1>FitCore Gym Management System</h1>
+        <p class="lead">A full gym management system with membership tracking, class scheduling, and trainer management.</p>
+        <div class="project-meta">
+          <div><strong>Role:</strong> Full-Stack Developer</div>
+          <div><strong>Stack:</strong> HTML, CSS, JavaScript</div>
+          <div><strong>Status:</strong> Deployed</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="container">
+        <figure class="project-image">
+          <img src="image.png" alt="FitCore Gym Management dashboard preview" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; width:100%; aspect-ratio:16/9; background:var(--card); border:1px solid var(--border); align-items:center; justify-content:center; color:var(--muted);">Project screenshot</div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="container">
+        <h2>Overview</h2>
+        <p>FitCore is a comprehensive gym management platform built to streamline operations for fitness centers. The system handles member registrations, membership plans, class schedules, trainer assignments, and attendance tracking — all through a clean, responsive web interface.</p>
+
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+          <li>Member management (CRUD, search, filters)</li>
+          <li>Membership plans with automated expiry tracking</li>
+          <li>Class scheduling with trainer assignment</li>
+          <li>Attendance logging and reporting</li>
+          <li>Responsive dashboard for admin & trainers</li>
+        </ul>
+
+        <h2>Challenges & Solutions</h2>
+        <p><strong>Real-time schedule conflicts:</strong> Implemented client-side validation with visual calendar feedback to prevent double-bookings.</p>
+        <p><strong>Data persistence without backend:</strong> Used localStorage with structured schemas, enabling offline-capable demo deployment.</p>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="container">
+        <div class="project-links">
+          <a href="https://merjohnpagente.github.io/FITCORE-GYM-MANAGEMENT-SYSTEM/" target="_blank" rel="noopener" class="btn btn--fill">Live Demo ↗</a>
+          <a href="https://github.com/MerjohnPagente/FITCORE-GYM-MANAGEMENT-SYSTEM" target="_blank" rel="noopener" class="btn btn--outline">View Source ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <a href="mailto:merjohnpagente11@gmail.com" class="footer-link">merjohnpagente11@gmail.com</a>
+      <a href="https://www.facebook.com/mjay.pagente.5" target="_blank" rel="noopener" class="footer-link">Facebook</a>
+      <p class="copyright">&copy; <span id="year"></span> Merjohn Pagente. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1/dist/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
