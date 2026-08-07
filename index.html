@@ -18,11 +18,10 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="wordmark">Merjohn<span>Pagente</span></a>
+      <a href="#top" class="wordmark">Merjohn<span>Pagente</span></a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="about.html">About</a>
-        <a href="work.html">Work</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
@@ -30,21 +29,123 @@
       </button>
     </div>
     <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="work.html">Work</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="main">
+    <!-- HERO -->
     <section class="hero section" id="top">
-      <div class="container" data-reveal>
-        <h1>Merjohn Pagente</h1>
-        <p class="hero-tagline lead">Web Developer & UI/UX Designer from the Philippines. I build responsive, user-friendly web experiences.</p>
-        <div class="hero-cta" style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:2rem;">
-          <a href="work.html" class="btn btn--fill">View Work</a>
-          <a href="about.html" class="btn btn--outline">Learn More</a>
+      <div class="container">
+        <div class="hero-content" data-reveal>
+          <h1>Merjohn Pagente</h1>
+          <p class="hero-tagline lead">Web Developer & UI/UX Designer from the Philippines. I build responsive, user-friendly web experiences.</p>
+          <div class="hero-cta" style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:2rem;">
+            <a href="#work" class="btn btn--fill">View Work</a>
+            <a href="#about" class="btn btn--outline">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-figure" data-reveal style="margin-top:4rem; text-align:center;">
+          <img src="190692035.jpg" alt="Merjohn Pagente" style="max-width:280px; width:100%; border-radius:50%; border:2px solid var(--border); object-fit:cover; aspect-ratio:1/1;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div data-reveal>
+          <span class="eyebrow">About Me</span>
+          <h2>I'm a 20-year-old student currently enrolled at Tangub City Global College, pursuing a Bachelor of Science in Computer Studies.</h2>
+          <p class="lead" style="margin-top:1.5rem;">My passion for technology and problem-solving has driven me to choose this field, as it offers endless opportunities for learning and growth. Throughout my academic journey, I have been eager to expand my knowledge in various areas of computer science, including programming and web development. I am deeply committed to honing my technical skills and staying updated with the latest technological advancements.</p>
+        </div>
+
+        <div class="about-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem; margin-top:4rem;">
+          <!-- SKILLS -->
+          <div class="card" data-reveal>
+            <h3>Skills</h3>
+            <div class="tag-cloud" style="margin-top:1rem;" aria-label="Technical skills">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">C#</span>
+              <span class="tag">Python</span>
+              <span class="tag">Responsive Design</span>
+              <span class="tag">UI/UX Design</span>
+              <span class="tag">Git & GitHub</span>
+              <span class="tag">Web APIs</span>
+            </div>
+          </div>
+
+          <!-- HOBBIES -->
+          <div class="card" data-reveal>
+            <h3>Hobbies</h3>
+            <div class="tag-cloud" style="margin-top:1rem;" aria-label="Hobbies">
+              <span class="tag">Playing online games</span>
+              <span class="tag">Exploring new technologies</span>
+              <span class="tag">UI/UX design trends</span>
+              <span class="tag">Personal coding projects</span>
+            </div>
+          </div>
+
+          <!-- LANGUAGES -->
+          <div class="card" data-reveal>
+            <h3>Languages</h3>
+            <ul class="lang-list" style="margin-top:1rem;" aria-label="Spoken and programming languages">
+              <li><span class="lang-name">English</span><span class="lang-level">Fluent</span></li>
+              <li><span class="lang-name">Tagalog</span><span class="lang-level">Native</span></li>
+              <li><span class="lang-name">Cebuano</span><span class="lang-level">Native</span></li>
+              <li><span class="lang-name">C#</span><span class="lang-level">Proficient</span></li>
+              <li><span class="lang-name">JavaScript</span><span class="lang-level">Proficient</span></li>
+              <li><span class="lang-name">Python</span><span class="lang-level">Intermediate</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="container">
+        <div data-reveal>
+          <span class="eyebrow">Featured Project</span>
+          <h2>FitCore Gym Management System</h2>
+          <p class="lead">A full gym management system with membership tracking, class scheduling, and trainer management.</p>
+          <div class="project-meta">
+            <div><strong>Role:</strong> Full-Stack Developer</div>
+            <div><strong>Stack:</strong> HTML, CSS, JavaScript</div>
+            <div><strong>Status:</strong> Deployed</div>
+          </div>
+        </div>
+
+        <figure class="project-image" data-reveal style="margin-top:2rem;">
+          <img src="image.png" alt="FitCore Gym Management dashboard preview" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; width:100%; aspect-ratio:16/9; background:var(--card); border:1px solid var(--border); align-items:center; justify-content:center; color:var(--muted); border-radius:var(--radius);">Project screenshot</div>
+        </figure>
+
+        <div data-reveal style="margin-top:3rem;">
+          <h3>Overview</h3>
+          <p>FitCore is a comprehensive gym management platform built to streamline operations for fitness centers. The system handles member registrations, membership plans, class schedules, trainer assignments, and attendance tracking — all through a clean, responsive web interface.</p>
+
+          <h3 style="margin-top:2rem;">Key Features</h3>
+          <ul class="feature-list">
+            <li>Member management (CRUD, search, filters)</li>
+            <li>Membership plans with automated expiry tracking</li>
+            <li>Class scheduling with trainer assignment</li>
+            <li>Attendance logging and reporting</li>
+            <li>Responsive dashboard for admin & trainers</li>
+          </ul>
+
+          <h3 style="margin-top:2rem;">Challenges & Solutions</h3>
+          <p><strong>Real-time schedule conflicts:</strong> Implemented client-side validation with visual calendar feedback to prevent double-bookings.</p>
+          <p><strong>Data persistence without backend:</strong> Used localStorage with structured schemas, enabling offline-capable demo deployment.</p>
+        </div>
+
+        <div class="project-links" data-reveal style="margin-top:3rem;">
+          <a href="https://merjohnpagente.github.io/FITCORE-GYM-MANAGEMENT-SYSTEM/" target="_blank" rel="noopener" class="btn btn--fill">Live Demo ↗</a>
+          <a href="https://github.com/MerjohnPagente/FITCORE-GYM-MANAGEMENT-SYSTEM" target="_blank" rel="noopener" class="btn btn--outline">View Source ↗</a>
         </div>
       </div>
     </section>
