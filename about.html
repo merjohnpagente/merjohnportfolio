@@ -1,103 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Merjohn Pagente</title>
-  <meta name="description" content="About Merjohn Pagente — Web Developer & UI/UX Designer. Skills, hobbies, languages, and background.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Merjohn Pagente</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="wordmark">Merjohn<span>Pagente</span></a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html" aria-current="page">About</a>
-        <a href="work.html">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="work.html">Work</a>
-      <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MP</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="works.html">My Work</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </nav>
-  </header>
 
-  <main id="main">
-    <section class="section" data-reveal>
-      <div class="container">
-        <h1>About</h1>
-        <p class="lead">I am a 20-year-old student currently enrolled at Tangub City Global College, where I am pursuing a Bachelor of Science in Computer Studies. My passion for technology and problem-solving has driven me to choose this field, as it offers endless opportunities for learning and growth. Throughout my academic journey, I have been eager to expand my knowledge in various areas of computer science, including programming, web development. I am deeply committed to honing my technical skills and staying updated with the latest technological advancements.</p>
-      </div>
-    </section>
+    <main>
+        <section class="page-header">
+            <h1>About Me</h1>
+            <p>Get to know me better</p>
+        </section>
 
-    <section class="section" data-reveal>
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="tag-cloud" aria-label="Technical skills">
-          <span class="tag">HTML5</span>
-          <span class="tag">CSS3</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">C#</span>
-          <span class="tag">Python</span>
-          <span class="tag">Responsive Design</span>
-          <span class="tag">UI/UX Design</span>
-          <span class="tag">Git & GitHub</span>
-          <span class="tag">Web APIs</span>
-        </div>
-      </div>
-    </section>
+        <section class="about-section">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-placeholder">MP</div>
+                </div>
+                <div class="about-content">
+                    <h2>Who I Am</h2>
+                    <p>
+                        Hi, I'm <strong>Merjohn Pagente</strong>, a 21-year-old web developer with a passion for
+                        creating clean, modern, and functional websites and web applications.
+                    </p>
+                    <p>
+                        I specialize in front-end development, crafting responsive and interactive user
+                        interfaces using HTML, CSS, and JavaScript. I love turning creative ideas
+                        into real, working products that people enjoy using.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies,
+                        learning about UI/UX design trends, or working on personal projects
+                        that challenge me to grow as a developer.
+                    </p>
 
-    <section class="section" data-reveal>
-      <div class="container">
-        <h2>Hobbies</h2>
-        <div class="tag-cloud" aria-label="Hobbies">
-          <span class="tag">Playing online games</span>
-          <span class="tag">Exploring new technologies</span>
-          <span class="tag">UI/UX design trends</span>
-          <span class="tag">Personal coding projects</span>
-        </div>
-      </div>
-    </section>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Name</span>
+                            <span class="info-value">Merjohn Pagente</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Age</span>
+                            <span class="info-value">21</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Philippines</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Focus</span>
+                            <span class="info-value">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <section class="section" data-reveal>
-      <div class="container">
-        <h2>Languages</h2>
-        <ul class="lang-list" aria-label="Spoken and programming languages">
-          <li><span class="lang-name">English</span><span class="lang-level">Fluent</span></li>
-          <li><span class="lang-name">Tagalog</span><span class="lang-level">Native</span></li>
-          <li><span class="lang-name">Cebuano</span><span class="lang-level">Native</span></li>
-          <li><span class="lang-name">C#</span><span class="lang-level">Proficient</span></li>
-          <li><span class="lang-name">JavaScript</span><span class="lang-level">Proficient</span></li>
-          <li><span class="lang-name">Python</span><span class="lang-level">Intermediate</span></li>
-        </ul>
-      </div>
-    </section>
-  </main>
+            <div class="skills-section">
+                <h2>Skills &amp; Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">&#128187;</div>
+                        <h3>HTML5</h3>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">&#127912;</div>
+                        <h3>CSS3</h3>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">&#9889;</div>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">&#128736;</div>
+                        <h3>Responsive Design</h3>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">&#128193;</div>
+                        <h3>Git &amp; GitHub</h3>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">&#127760;</div>
+                        <h3>Web APIs</h3>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 72%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer class="site-footer" id="contact">
-    <div class="footer-inner">
-      <a href="mailto:merjohnpagente11@gmail.com" class="footer-link">merjohnpagente11@gmail.com</a>
-      <a href="https://www.facebook.com/mjay.pagente.5" target="_blank" rel="noopener" class="footer-link">Facebook</a>
-      <p class="copyright">&copy; <span id="year"></span> Merjohn Pagente. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2026 MerJohn Pagente. All rights reserved.</p>
+    </footer>
 
-  <script src="https://unpkg.com/lenis@1/dist/lenis.min.js" defer></script>
-  <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
