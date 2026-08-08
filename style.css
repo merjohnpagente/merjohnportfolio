@@ -369,7 +369,7 @@ p { margin: 0; }
 .skills-section { position: relative; max-width: var(--container); margin: 0 auto; padding: var(--section-pad) 1.5rem; }
 .skills-section h2 { font-size: var(--h2-size); max-width: 760px; margin-bottom: 3rem; line-height: 1.04; }
 
-.skills-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
 
 .skill-card {
     position: relative; background: var(--bg); padding: 2.25rem 1.75rem; min-height: 300px;
@@ -499,7 +499,7 @@ p { margin: 0; }
 @media (max-width: 860px) {
     .about { grid-template-columns: 1fr; }
     .about-media { margin-left: 0; }
-    .skills-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
     .connect-grid { grid-template-columns: 1fr; }
 }
 
