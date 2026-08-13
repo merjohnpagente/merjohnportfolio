@@ -215,7 +215,99 @@ document.addEventListener('DOMContentLoaded', () => {
                         navLinks.forEach(l => l.style.color = '');
                         link.style.color = 'var(--gold-bright)';
                     }
-                });
+/* ========== DOWNLOAD RESUME ========== */
+    const downloadResume = document.getElementById('downloadResume');
+    if (downloadResume) {
+        downloadResume.addEventListener('click', (e) => {
+            e.preventDefault();
+            const url = downloadResume.getAttribute('href');
+            const filename = downloadResume.getAttribute('download') || 'resume.pdf';
+            fetch(url)
+                .then((res) => {
+                    if (!res.ok) throw new Error('not found');
+                    return res.blob();
+                })
+                .then((blob) => {
+                    const objectUrl = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = objectUrl;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    URL.revokeObjectURL(objectUrl);
+                })
+                .catch(() => {
+                    window.location.href = url;
+/* ========== CONTACT FORM ========== */
+    const contactForm = document.getElementById('contactForm');
+    const WEB3FORMS_KEY = ''; /* <-- paste your free access key from https://web3forms.com here */
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = contactForm.elements.name.value.trim();
+            const email = contactForm.elements.email.value.trim();
+            const message = contactForm.elements.message.value.trim();
+            if (!name || !email || !message) return;
+
+            const statusEl = document.getElementById('formStatus');
+            const submitBtn = contactForm.querySelector('.connect-form__submit');
+            const originalLabel = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            statusEl.textContent = '';
+            statusEl.classList.remove('connect-form__status--error');
+
+            if (WEB3FORMS_KEY) {
+                try {
+                    const res = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+                        body: JSON.stringify({
+                            access_key: WEB3FORMS_KEY,
+                            subject: `Portfolio Contact from ${name}`,
+                            name: name,
+                            email: email,
+                            message: message,
+                        }),
+                    });
+                    const data = await res.json();
+                    if (data.success) {
+                        contactForm.reset();
+                        statusEl.textContent = 'Message sent! I will get back to you soon.';
+                    } else {
+                        throw new Error(data.message || 'send failed');
+                    }
+                } catch (err) {
+                    statusEl.textContent = 'Could not send — opening your mail app instead.';
+                    statusEl.classList.add('connect-form__status--error');
+                    openMailto(name, email, message);
+                }
+            } else {
+                openMailto(name, email, message);
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalLabel;
+        });
+    }
+
+    function openMailto(name, email, message) {
+        const subject = `Portfolio Contact from ${name}`;
+        const body = `${message}\n\n— ${name}\n${email}`;
+        const a = document.createElement('a');
+        a.href = `mailto:merjohnpagente2004@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+    }
+
+});
+        });
+    }
+
+});
             }
         });
     }
