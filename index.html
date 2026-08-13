@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -125,22 +125,21 @@
         <!-- HERO -->
         <section class="hero" id="top">
             <div class="hero-grid" aria-hidden="true"></div>
-            <div class="hero-frame" aria-hidden="true">
-                <i class="hf hf--tl"></i><i class="hf hf--tr"></i><i class="hf hf--bl"></i><i class="hf hf--br"></i>
-            </div>
             <div class="hero-type" aria-hidden="true">
-                <div class="hero-line hero-line--accent hero-line--dev">MERJOHN</div>
-                <div class="hero-line hero-line--accent hero-line--long">PAGENTE</div>
+                <div class="hero-line" data-speed="0.9">WELCOME</div>
+                <div class="hero-line" data-speed="1.1">TO MY</div>
+                <div class="hero-line hero-line--accent hero-line--long" data-speed="1.2">PORTFOLIO</div>
             </div>
             <h1 class="sr-only">Merjohn Pagente — Web Developer & Designer</h1>
 
-            <div class="hero-figure-wrap">
+            <div class="hero-figure-wrap" data-speed="0.35">
                 <img class="hero-figure" src="assets/hero.png" alt="Merjohn Pagente" fetchpriority="high">
             </div>
 
             <div class="hero-glow" aria-hidden="true"></div>
           <p class="hero-sub" id="heroSub">Web Developer · UI/UX Designer · BSCS Student</p>
             <div class="hero-brand">
+                <span class="hero-brand__name">Merjohn Pagente</span>
                 <span class="hero-brand__tag">I Build. I Design. I Deliver.</span>
                 <span class="hero-swatches" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
                 <div class="hero-actions">
@@ -154,8 +153,8 @@
                     </a>
                 </div>
             </div>
-            <span class="hero-spark hero-spark--main" aria-hidden="true"></span>
-            <span class="hero-spark hero-spark--sm" aria-hidden="true"></span>
+            <span class="hero-spark hero-spark--main" aria-hidden="true">✦</span>
+            <span class="hero-spark hero-spark--sm" aria-hidden="true">✦</span>
             <span class="hero-plus hero-plus--1" aria-hidden="true">+</span>
             <span class="hero-plus hero-plus--2" aria-hidden="true">+</span>
             <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
@@ -491,6 +490,8 @@
         <span>Web Developer · UI/UX Designer · Front-End Specialist</span>
     </footer>
 
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
     <script src="https://unpkg.com/lenis@1/dist/lenis.min.js" defer></script>
     <script src="script.js" defer></script>
 </body>

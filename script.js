@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ========== TYPING EFFECT ========== */
     const heroSub = document.getElementById('heroSub');
     if (heroSub) {
-        const words = ['Web Developer · UI/UX Designer · Front-End Specialist'];
+        const words = ['Web Developer · UI/UX Designer · BSCS Student'];
         let charIndex = 0;
         const word = words[0];
 
@@ -188,17 +188,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* ========== PARALLAX (DATA-SPEED) ========== */
-    const parallaxEls = document.querySelectorAll('[data-speed]');
-    function updateParallax() {
-        parallaxEls.forEach(el => {
-            const speed = parseFloat(el.dataset.speed);
-            const scrollY = window.scrollY;
-            const offset = scrollY * speed;
-            el.style.transform = `translateY(${offset}px)`;
-        });
+    /* ========== HERO PARALLAX (GSAP SCROLLTRIGGER) ========== */
+    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+        lenis.on('scroll', ScrollTrigger.update);
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const isMobile = window.matchMedia('(max-width: 760px)').matches;
+
+        if (!reduceMotion && !isMobile) {
+            gsap.utils.toArray('[data-speed]').forEach(el => {
+                const speed = parseFloat(el.dataset.speed);
+                gsap.to(el, {
+                    yPercent: (1 - speed) * 40,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: '.hero',
+                        start: 'top top',
+                        end: 'bottom top',
+                        scrub: true,
+                    },
+                });
+            });
+
+            gsap.to('.hero-figure', {
+                scale: 1.08,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '.hero',
+                    start: 'top top',
+                    end: 'bottom top',
+                    scrub: true,
+                },
+            });
+        }
     }
-    window.addEventListener('scroll', updateParallax, { passive: true });
 
     /* ========== ACTIVE NAV ON SCROLL ========== */
     const sections = document.querySelectorAll('section[id]');
