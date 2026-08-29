@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(typeLoop, 50);
             }
         }
-        setTimeout(typeLoop, 300);
+        // typing disabled for test
     }
 
     /* ========== SCROLL REVEAL ========== */

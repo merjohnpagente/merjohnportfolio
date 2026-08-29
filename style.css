@@ -513,9 +513,9 @@ p { margin: 0; }
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1080px) {
-    .site-nav, .header-social { display: none; }
-    .menu-toggle { display: flex; }
-    .mobile-nav.is-open { display: flex; }
+    .hero-brand__name, .hero-brand__tag { display: none; }
+    .hero-sub { bottom: 8rem; }
+    .scroll-cue { bottom: 10.5rem; }
 }
 
 @media (max-width: 960px) {
@@ -524,6 +524,9 @@ p { margin: 0; }
 }
 
 @media (max-width: 860px) {
+    .site-nav, .header-social { display: none; }
+    .menu-toggle { display: flex; }
+    .mobile-nav.is-open { display: flex; }
     .about { grid-template-columns: 1fr; }
     .about-media { margin-left: 0; }
     .skills-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
